@@ -1,8 +1,8 @@
 "use strict";
-const chai = require("chai");
-const index_1 = require("../src/index");
-const { expect } = chai;
-describe("twiml generation utility", () => {
+var chai = require("chai");
+var index_1 = require("../src/index");
+var expect = chai.expect;
+describe("twiml generation utility", function () {
     it('should generate an empty response when given no arguments', function () {
         var result = index_1.default();
         expect(result).to.equal('<?xml version="1.0" encoding="UTF-8"?><Response></Response>');
